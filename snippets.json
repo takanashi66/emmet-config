@@ -1,0 +1,31 @@
+{
+
+	"variables": {
+		"lang": "ja",
+		"locale": "ja-JP"
+	},
+
+	"html": {
+		"filters": "html,c",
+		"profile": "html",
+
+		"abbreviations": {
+  		"hm": "<mm></mm>|",
+			"!": "!!!+html[lang=${lang}]>(head>meta[charset=UTF-8]+meta[name=\"keywords\" content=\"\"]+meta[name=\"description\" content=\"\"]+meta[http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"]+meta[name=\"viewport\" content=\"width=device-width\"]+link[common/css/style.css]+title{${1:Document}})+body",
+			"table+": "table>tr>th+td",
+			"tr+": "tr>th+td"
+		}
+	},
+
+  "jade": {
+		"filters": "jade",
+		"extends": "html",
+		"profile": "xml",
+
+    "abbreviations": {
+      "mnk": "!(src=\"\")"
+    }
+	}
+
+
+}
