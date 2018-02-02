@@ -6,7 +6,7 @@
 	},
 
 	"html": {
-		"filters": "html,c",
+		"filters": "html",
 		"profile": "html",
 
 		"abbreviations": {
