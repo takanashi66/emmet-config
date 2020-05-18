@@ -23,7 +23,8 @@
         "extends": "css",
 
         "abbreviations": {
-            "mq": "@include media_query(){\n\t|\n}",
+            "rem": "@include rem(|);",
+            "mq":  "@include media_query(){\n\t|\n}",
             "imq": "@mixin media_query(\\$width){\n\t@media screen and (max-width: \\$width+px){\n\t\t@content;\n\t}\n}"
         }
     },
