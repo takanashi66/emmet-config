@@ -3,14 +3,17 @@
         "lang": "ja",
         "locale": "ja"
     },
-    
     "html": {
         "snippets": {
-            "ull": "ul>li[id=${1} class=${2}]*2{ Will work with html, pug, haml and slim }",
-            "oll": "<ol><li id=${1} class=${2}> Will only work in html </ol>",
-            "ran": "{ Wrap plain text in curly braces }",
-            "ogp": "meta[property=\"og:type\" content=\"\"]+meta[property=\"og:url\" content=\"\"]+meta[property=\"og:title\" content=\"\"]+meta[property=\"og:image\" content=\"\"]+meta[property=\"og:description\" content=\"\"]+meta[property=\"og:site_name\" content=\"\"]+meta[property=\"og:locale\" content=\"ja_JP\"]+meta[property=\"og:image:width\" content=\"1200\"]+meta[property=\"og:image:height\" content=\"630\"]+meta[name=\"twitter:card\" content=\"summary_large_image\"]+meta[name=\"twitter:site\" content=\"\"]+meta[name=\"twitter:url\" content=\"\"]+meta[name=\"twitter:title\" content=\"\"]+meta[name=\"twitter:description\" content=\"\"]+meta[name=\"twitter:image\" content=\"\"]",
-            "doc": "html[lang=${lang}]>(head>meta[charset=UTF-8]+meta[name=\"keywords\" content=\"\"]+meta[name=\"description\" content=\"\"]+meta[http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"]+meta[name=\"viewport\" content=\"width=device-width, initial-scale=1\"]+link+link[rel=\"icon\" type=\"image/png\" href=\"\"]+title{${1:Document}})+body"
+            "!": "!!!+html[lang=${lang}]>(head>meta[charset=UTF-8]+meta[name='description' content='']+meta[http-equiv='X-UA-Compatible' content='IE=edge']+meta[name='viewport' content='width=device-width, initial-scale=1']+link+link[rel='icon' type='image/png' href='']+title{${1:Document}})+body",
+            "ogp": "meta[property='og:type' content='']+meta[property='og:url' content='']+meta[property='og:title' content='']+meta[property='og:image' content='']+meta[property='og:description' content='']+meta[property='og:site_name' content='']+meta[property='og:locale' content='ja_JP']+meta[property='og:image:width' content='1200']+meta[property='og:image:height' content='630']+meta[name='twitter:card' content='summary_large_image']+meta[name='twitter:site' content='']+meta[name='twitter:url' content='']+meta[name='twitter:title' content='']+meta[name='twitter:description' content='']+meta[name='twitter:image' content='']"
+        }
+    },
+    "css": {
+        "snippets": {
+            "rem": "@include rem(${1});",
+            "mq":  "@include media_query(${1}){\n\t${2}\n}",
+            "imq": "@mixin media_query(\\$width){\n\t@media screen and (max-width: \\$width+px){\n\t\t@content;\n\t}\n}"
         }
     }
 }
