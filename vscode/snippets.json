@@ -6,7 +6,8 @@
     "html": {
         "snippets": {
             "!": "!!!+html[lang=${lang}]>(head>meta[charset=UTF-8]+meta[name='description' content='']+meta[http-equiv='X-UA-Compatible' content='IE=edge']+meta[name='viewport' content='width=device-width, initial-scale=1']+link+link[rel='icon' type='image/png' href='']+title{${1:Document}})+body",
-            "ogp": "meta[property='og:type' content='']+meta[property='og:url' content='']+meta[property='og:title' content='']+meta[property='og:image' content='']+meta[property='og:description' content='']+meta[property='og:site_name' content='']+meta[property='og:locale' content='ja_JP']+meta[property='og:image:width' content='1200']+meta[property='og:image:height' content='630']+meta[name='twitter:card' content='summary_large_image']+meta[name='twitter:site' content='']+meta[name='twitter:url' content='']+meta[name='twitter:title' content='']+meta[name='twitter:description' content='']+meta[name='twitter:image' content='']"
+            "ogp": "meta[property='og:type' content='']+meta[property='og:url' content='']+meta[property='og:title' content='']+meta[property='og:image' content='']+meta[property='og:description' content='']+meta[property='og:site_name' content='']+meta[property='og:locale' content='ja_JP']+meta[property='og:image:width' content='1200']+meta[property='og:image:height' content='630']+meta[name='twitter:card' content='summary_large_image']+meta[name='twitter:site' content='']+meta[name='twitter:url' content='']+meta[name='twitter:title' content='']+meta[name='twitter:description' content='']+meta[name='twitter:image' content='']",
+            "php": "<?php ?>"
         }
     },
     "css": {
