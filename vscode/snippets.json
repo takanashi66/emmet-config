@@ -17,6 +17,7 @@
         "snippets": {
             "rem": "@include rem(${1});",
             "mq":  "@include media_query(){\n\t${1}\n}",
+            "mq":  "@media(width ${1}){\n\t${2}\n}",
             "imq": "@mixin media_query(\\$width){\n\t@media screen and (max-width: \\$width+px){\n\t\t@content;\n\t}\n}"
         }
     }
