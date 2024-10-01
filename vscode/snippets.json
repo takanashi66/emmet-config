@@ -5,8 +5,8 @@
     },
     "html": {
         "snippets": {
-            "!": "!!!+html[lang=${lang}]>(head>meta[charset=UTF-8]+meta[name='description' content='']+meta[name='viewport' content='width=device-width, initial-scale=1']+link+link[rel='icon' type='image/png' href='']+title{${1:Document}})+body",
-            "ogp": "meta[property='og:type' content='']+meta[property='og:url' content='']+meta[property='og:title' content='']+meta[property='og:image' content='']+meta[property='og:description' content='']+meta[property='og:site_name' content='']+meta[property='og:locale' content='ja_JP']+meta[property='og:image:width' content='1200']+meta[property='og:image:height' content='630']+meta[name='twitter:card' content='summary_large_image']+meta[name='twitter:site' content='']+meta[name='twitter:url' content='']+meta[name='twitter:title' content='']+meta[name='twitter:description' content='']+meta[name='twitter:image' content='']",
+            "!": "!!!+html[lang=${lang}]>(head>meta[charset=UTF-8]+meta[name='description' content='']+meta[name='viewport' content='width=device-width, initial-scale=1']+link+link[rel='icon' type='image/png' href='']+link[rel='apple-touch-icon' type='image/png' href='']+link[rel='canonical' href='']+title{${1:Document}})+body",
+            "ogp": "meta[name='twitter:card' content='summary_large_image']+meta[property='og:title' content='']+meta[property='og:type' content='website']+meta[property='og:image' content='']+meta[property='og:url' content='']+meta[property='og:description' content='']+meta[property='og:site_name' content='']+meta[property='og:locale' content='ja_JP']",
             "php": "<?php ${0} ?>",
             "wi": "<?= get_template_directory_uri(); ?>/",
             "rimg": "picture>source[type=image/webp][media=\"(min-width:641px)\"][srcset=PC&webp]+source[type=image/webp][srcset=SP&webp]+source[type=image/png][media=\"(min-width:641px)\"][srcset=PC&png]+source[type=image/png][srcset=SP&png]+img[width][height][alt]",
@@ -16,9 +16,10 @@
     "css": {
         "snippets": {
             "rem": "@include rem(${1});",
+            "imq": "@mixin media_query(\\$width){\n\t@media screen and (max-width: \\$width+px){\n\t\t@content;\n\t}\n}",
             "mq":  "@include media_query(){\n\t${1}\n}",
-            "mq":  "@media(width ${1}){\n\t${2}\n}",
-            "imq": "@mixin media_query(\\$width){\n\t@media screen and (max-width: \\$width+px){\n\t\t@content;\n\t}\n}"
+            "mqr": "@media(width <= 640px){\n\t${1}\n}",
+            "var": "var(--${1})"
         }
     }
 }
